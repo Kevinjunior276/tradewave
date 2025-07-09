@@ -1,0 +1,1493 @@
+/* --- CHARTE GRAPHIQUE TRADEWAVE --- */
+:root {
+  --primary: #1A3478; /* Bleu du logo TradeWave */
+  --primary-hover: #14285c;
+  --accent: #FF6600;  /* Orange du logo TradeWave */
+  --background: #fff;
+  --text-main: #1A3478;
+  --text-light: #444;
+  --text-title: #181818;
+  --gray-light: #f5f5f5;
+  --gray-border: #e0e0e0;
+}
+
+body {
+  background: var(--background) !important;
+  color: var(--text-main) !important;
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
+.service-img img {
+    height: 230px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.team .row {
+    justify-content: center !important;
+    text-align: initial;
+}
+.team-item {
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(26,52,120,0.08);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.2s;
+}
+.team-item:hover {
+    box-shadow: 0 8px 32px rgba(26,52,120,0.16);
+}
+.team-img img {
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    border: 4px solid #1A3478 !important;
+    box-shadow: none !important;
+    outline: none !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.2rem;
+    background: #fff;
+}
+.team-img {
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+.team-title {
+    background: rgba(255,255,255,0.96);
+    border-radius: 0.7rem;
+    padding: 0.5rem 0.2rem 0.7rem 0.2rem;
+    margin-top: -1.2rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(26,52,120,0.04);
+}
+.team-title h4, .team-title p {
+    color: #1A3478 !important;
+    text-shadow: 0 1px 2px #fff;
+    opacity: 1 !important;
+}
+.team-title p {
+    color: #444 !important;
+    font-size: 1.08rem !important;
+    margin-bottom: 0.2rem !important;
+}
+.team-icon {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-top: 0.5rem;
+}
+.team-icon .btn {
+    background: #1A3478;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+.team-icon .btn:hover {
+    background: #ff4d4f;
+    color: #fff;
+}
+.countdown-box {
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 4px 24px rgba(26,52,120,0.08);
+    border: 2px solid var(--primary);
+    margin-bottom: 2rem;
+}
+.countdown-value {
+    color: var(--primary);
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    min-width: 70px;
+    background: #f5f5f5;
+    border-radius: 1rem;
+    padding: 0.5rem 1.2rem;
+    box-shadow: 0 2px 8px rgba(26,52,120,0.05);
+    display: inline-block;
+}
+.countdown-label {
+    font-size: 1rem;
+    color: var(--accent);
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
+}
+.text-accent {
+    color: var(--accent);
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .countdown-box {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.2rem;
+    }
+    .countdown-value {
+        font-size: 2rem;
+        min-width: 48px;
+        padding: 0.3rem 0.7rem;
+    }
+}
+.countdown-anim {
+    display: inline-block;
+    min-width: 220px;
+    letter-spacing: 2px;
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.team-item:hover .team-title, .team-item:hover .team-title h4, .team-item:hover .team-title p {
+    opacity: 1 !important;
+    visibility: visible !important;
+    filter: none !important;
+    transition: none !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary) !important;
+}
+
+/* L'orange uniquement pour les accents, boutons principaux, liens actifs */
+.text-primary, .fa-primary, .bi-primary, .active, .show > .nav-link, .show > .dropdown-toggle {
+  color: var(--accent) !important;
+}
+
+.btn-primary, .btn.btn-primary, .service-item .btn, .feature-item .btn, .offer-section .btn, .blog-item .btn, .back-to-top {
+  background: var(--primary) !important;
+  border-color: var(--accent) !important;
+  color: #fff !important;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-primary:hover, .btn.btn-primary:hover, .service-item .btn:hover, .feature-item .btn:hover, .offer-section .btn:hover, .blog-item .btn:hover, .back-to-top:hover {
+  background: var(--accent) !important;
+  border-color: var(--primary) !important;
+  color: #fff !important;
+}
+
+/* Liens principaux (menu, footer) en gris foncé, orange seulement au hover/actif */
+a, .nav-link, .dropdown-toggle, .footer a {
+  color: var(--primary) !important;
+  transition: color 0.2s;
+}
+
+a:hover, .nav-link:hover, .dropdown-toggle:hover, .footer a:hover, .navbar-nav .nav-link.active {
+  color: var(--accent) !important;
+}
+
+/* Icônes en gris foncé par défaut, orange pour les accents */
+.fas, .fab, .fa, .bi {
+  color: inherit !important;
+}
+.text-primary .fas, .text-primary .fab, .text-primary .fa, .text-primary .bi {
+  color: var(--accent) !important;
+}
+
+/* Fonds secondaires en gris clair */
+.bg-light, .topbar, .footer, .copyright {
+  background: var(--gray-light) !important;
+  color: var(--text-light) !important;
+}
+
+/* Bordures en gris clair */
+.border-primary {
+  border-color: var(--gray-border) !important;
+}
+
+/* Inputs et focus */
+input:focus, textarea:focus, select:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255,102,0,0.10) !important;
+}
+
+/* Progress bar */
+.progress-bar {
+  background-color: var(--primary) !important;
+}
+
+/* --- FIN CHARTE TRADEWAVE --- */
+
+/*** Spinner Start ***/
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+/*** Spinner End ***/
+
+/* --- POSITION FLOTTANTE BACK TO TOP --- */
+.back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+}
+/* --- FIN POSITION FLOTTANTE --- */
+
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-xl-square {
+    width: 66px;
+    height: 66px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square,
+.btn-xl-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn.btn-primary {
+    color: var(--bs-white);
+    border: none;
+}
+
+.btn.btn-primary:hover {
+    background: var(--bs-dark);
+    color: var(--bs-primary);
+}
+
+.btn.btn-light {
+    color: var(--bs-primary);
+    border: none;
+}
+
+.btn.btn-light:hover {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+}
+
+
+/*** Topbar Start ***/
+.topbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    vertical-align: middle;
+    margin-left: 8px;
+    color: var(--bs-primary);
+}
+
+.topbar .dropdown .dropdown-menu a:hover {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+.topbar .dropdown .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    background: var(--bs-light);
+    padding-top: 11px;
+    border: 0;
+    transition: .5s;
+    opacity: 1;
+}
+
+/*** Topbar End ***/
+
+
+
+/*** Navbar ***/
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    margin-right: 25px;
+    padding: 35px 0;
+    color: var(--bs-white);
+    font-size: 17px;
+    font-weight: 400;
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link,
+.sticky-top.navbar-light .navbar-nav .nav-item .nav-link {
+    padding: 20px 0;
+    color: var(--bs-dark);
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: var(--bs-white);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item .nav-link.active  {
+    color: var(--bs-primary);
+}
+
+.navbar-light .navbar-brand img {
+    max-height: 60px;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-brand img {
+    max-height: 45px;
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.dropdown .dropdown-menu a:hover {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    background: var(--bs-light);
+    transition: .5s;
+    opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+    .sticky-top.navbar-light {
+        position: relative;
+        background: var(--bs-white);
+    }
+
+    .navbar.navbar-expand-lg .navbar-toggler {
+        padding: 10px 20px;
+        border: 1px solid var(--bs-primary);
+        color: var(--bs-primary);
+    }
+
+    .navbar-light .navbar-collapse {
+        margin-top: 15px;
+        border-top: 1px solid #DDDDDD;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .sticky-top.navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+        margin-left: 0;
+        color: var(--bs-dark);
+    }
+
+    .navbar-light .navbar-nav .nav-item .nav-link {
+        color: var(--bs-dark);
+    }
+
+    .navbar-light .navbar-brand img {
+        max-height: 45px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        border: 0;
+        border-radius: 10px;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .navbar-light {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        z-index: 999;
+    }
+    
+    .sticky-top.navbar-light {
+        position: fixed;
+        background: var(--bs-light);
+    }
+
+    .navbar-light .navbar-nav .nav-link::before,
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before,
+    .navbar-light .navbar-nav .nav-link::after,
+    .navbar-light .navbar-nav .nav-link:hover::after,
+    .navbar-light .navbar-nav .nav-link.active::after {
+        display: none !important;
+        background: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        content: none !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: -1px;
+        left: 50%;
+        transition: .5s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: calc(100% - 2px);
+        left: 1px;
+    }
+
+    .navbar-light .navbar-nav .nav-link::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        bottom: -1px;
+        left: 50%;
+        transition: .5s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::after,
+    .navbar-light .navbar-nav .nav-link.active::after {
+        width: 2px;
+        height: 12px;
+    }
+}
+/*** Navbar End ***/
+
+/*** Carousel Hero Header Start ***/
+.header-carousel .header-carousel-item img {
+    object-fit: cover;
+}
+
+.header-carousel .header-carousel-item,
+.header-carousel .header-carousel-item img {
+        height: 700px;
+}
+
+/* Masquer les chevrons de navigation du carrousel hero */
+.header-carousel .owl-nav {
+  display: none !important;
+}
+
+.header-carousel .header-carousel-item .carousel-caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    padding-top: 120px;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .header-carousel .header-carousel-item .carousel-caption {
+        padding-top: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-carousel .owl-nav .owl-prev {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: -45px;
+    }
+
+
+    .header-carousel .owl-nav .owl-next {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 45px;
+    }
+}
+
+
+.header-carousel .header-carousel-item img {
+    animation-name: image-zoom;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 1s;
+}
+
+@keyframes image-zoom {
+    0%  {height: 100%; opacity: 0.9;}
+
+    25% {height: 110%; opacity: 0.50;}
+
+    50% {height: 115%; opacity: 1;}
+
+    75% {height: 110%; opacity: 0.50;}
+
+    100% {height: 100%; opacity: 0.9;}
+}
+
+/* Paragraphes du carrousel hero en blanc pour visibilité */
+.header-carousel .carousel-caption p {
+  color: #fff !important;
+}
+/* Fin paragraphes hero blancs */
+/*** Carousel Hero Header End ***/
+
+
+/*** Single Page Hero Header Start ***/
+.bg-breadcrumb {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/carousel-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0 60px 0;
+    transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+    .bg-breadcrumb {
+        padding: 140px 0 60px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .bg-breadcrumb {
+        padding: 60px 0 60px 0;
+    }
+}
+
+.bg-breadcrumb .breadcrumb {
+    position: relative;
+}
+
+.bg-breadcrumb .breadcrumb .breadcrumb-item a {
+    color: var(--bs-white);
+}
+/*** Single Page Hero Header End ***/
+
+
+/*** Service Start ***/
+.service .service-item {
+    background: var(--bs-light);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.service .service-item:hover {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+}
+
+.service .service-item .service-img {
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.5s;
+}
+
+.service .service-item .service-img img {
+    transition: 0.5s;
+}
+
+.service .service-item:hover .service-img img {
+    transform: scale(1.2);
+}
+/*** Service End ***/
+
+
+/*** Features Start ***/
+.feature .feature-item {
+    text-align: center;
+    border-radius: 10px;
+    background: var(--bs-light);
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.feature .feature-item:hover {
+    border: 1px solid var(--bs-primary);
+}
+
+.feature .feature-item .feature-icon {
+    background: var(--bs-white);
+    border-radius: 10px;
+    display: inline-block;
+}
+/*** Features End ***/
+
+/*** Offer Start ***/
+.offer-section .nav a.accordion-link {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    background: var(--bs-white);
+    transition: 0.5s;
+}
+
+.offer-section .nav a.accordion-link.active {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+}
+
+.offer-section .nav a.accordion-link h5 {
+    transition: 0.5s;
+}
+
+.offer-section .nav a.accordion-link.active h5 {
+    color: var(--bs-white);
+}
+/*** Offer End ***/
+
+/*** Blog Start ***/
+.blog .blog-item {
+    border-radius: 10px;
+    background: var(--bs-white);
+    box-shadow: inset 0 0 45px rgba(0, 0, 0, .1);
+    transition: 0.5s;
+}
+
+.blog .blog-item a,
+.blog .blog-item .h4,
+.blog .blog-item h4,
+.blog .blog-item .h5,
+.blog .blog-item h5 {
+    color: var(--primary) !important;
+}
+
+.blog .blog-item a:hover,
+.blog .blog-item h4:hover,
+.blog .blog-item h5:hover {
+    color: var(--accent) !important;
+}
+
+.blog .blog-item .blog-img {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog .blog-item .blog-img img {
+    transition: 0.5s;
+}
+
+.blog .blog-item:hover .blog-img img {
+    transform: scale(1.2);
+}
+
+.blog .blog-item .blog-img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: rgba(0, 208, 132, 0.1);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.blog .blog-item:hover .blog-img::after {
+    opacity: 1;
+}
+
+.blog .blog-item .blog-img .blog-title {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 5;
+}
+
+.blog .blog-item .blog-img .blog-title a {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+    transition: 0.5s;
+}
+
+.blog .blog-item:hover .blog-img .blog-title a:hover {
+    color: var(--bs-dark);
+}
+
+.blog-carousel .owl-stage-outer {
+    margin-top: 58px;
+}
+
+.blog .owl-nav .owl-prev {
+    position: absolute;
+    top: -58px;
+    left: 0;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    padding: 6px 35px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.blog .owl-nav .owl-prev:hover {
+    background: var(--bs-dark);
+    color: var(--bs-primary);
+}
+
+.blog .owl-nav .owl-next {
+    position: absolute;
+    top: -58px;
+    right: 0;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    padding: 6px 35px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.blog .owl-nav .owl-next:hover {
+    background: var(--bs-dark);
+    color: var(--bs-primary);
+}
+
+/* Inversion des chevrons blog : gauche = droite, droite = gauche */
+.blog .owl-nav .owl-prev span,
+.blog .owl-nav .owl-prev i {
+  transform: scaleX(-1);
+}
+.blog .owl-nav .owl-next span,
+.blog .owl-nav .owl-next i {
+  transform: scaleX(-1);
+}
+/* Fin inversion chevrons blog */
+
+/*** FAQs Start ***/
+.faq-section .accordion .accordion-item .accordion-header .accordion-button {
+    color: var(--bs-secondary);
+}
+
+.faq-section .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+    color: var(--bs-dark);
+}
+
+/* Correction couleur réponses FAQ : texte principal, jamais orange */
+.faq-section .accordion .accordion-item .accordion-body {
+  color: var(--text-main) !important;
+}
+/* Fin correction FAQ */
+
+/* Section FAQ : tout en bleu, aucun hover orange, pas de liens */
+.faq-section, .faq-section * {
+  color: var(--primary) !important;
+}
+.faq-section a, .faq-section a:hover, .faq-section .accordion-button:hover {
+  color: var(--primary) !important;
+  text-decoration: none !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+/* Fin section FAQ full bleu */
+
+/* Titre FAQ en orange accent */
+.faq-section h4,
+.faq-section .text-primary {
+  color: var(--accent) !important;
+}
+/* Fin titre FAQ orange */
+
+/*** Team Start ***/
+.team .team-item {
+    position: relative;
+    padding: 0 25px 25px 25px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.team .team-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: var(--bs-light);
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.team .team-item:hover::before {
+    height: 0;
+}
+
+.team .team-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.team .team-item:hover::after {
+    height: 100%;
+    background: var(--accent) !important;
+}
+
+.team .team-item .team-img {
+    width: 100%; 
+    height: 100%;
+    border-radius: 100%;
+    position: relative;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    margin-bottom: -50%;
+    display: flex;
+    justify-content: center;
+    border: 4px solid var(--bs-primary);
+    border-style: dotted;
+    padding: 4px;
+    background: var(--bs-white);
+    transition: 0.5s;
+}
+
+.team .team-item:hover .team-img {
+    border: 4px solid var(--bs-white);
+    border-style: dotted;
+    background: 0;
+}
+
+.team .team-item .team-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+.team .team-item .team-title {
+    padding: 25px 0 25px 0;
+    text-align: center;
+}
+
+.team .team-item .team-title h4,
+.team .team-item .team-title p {
+    transition: 0.5s;
+}
+
+.team .team-item:hover .team-title h4,
+.team .team-item:hover .team-title p {
+    color: #fff !important;
+}
+
+.team .team-item .team-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.team .team-item .team-icon a {
+    transition: 0.5s;
+}
+
+.team .team-item:hover .team-icon a {
+    color: var(--bs-dark);
+    background: var(--bs-white);
+}
+
+.team .team-item:hover .team-icon a:hover {
+    color: var(--bs-primary);
+    background: var(--bs-dark);
+}
+
+/* Désactive le hover, le curseur pointer et la couleur orange sur les icônes team (strong) */
+.team-icon strong {
+  cursor: default !important;
+  pointer-events: none !important;
+}
+.team-icon strong:hover, .team-icon strong:focus {
+  background: var(--primary) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.team-icon strong i {
+  color: #fff !important;
+}
+/* Fin désactivation effets team-icon */
+/*** Team End ***/
+
+/*** Testimonial Start ***/
+.testimonial .testimonial-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 0 25px 25px 25px;
+}
+
+.testimonial .testimonial-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 50px);
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background: var(--bs-light);
+    z-index: -1;
+}
+
+.testimonial .testimonial-item .testimonial-img {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial .testimonial-item .testimonial-img img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 100px;
+    border: 5px solid var(--bs-light);
+    border-style: double;
+    background: var(--bs-white);
+}
+
+.testimonial .testimonial-item .testimonial-text {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.testimonial .testimonial-item .testimonial-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial .testimonial-item  .testimonial-quote-left {
+    position: absolute;
+    width: 60px; 
+    height: 60px;
+    top: 20px;
+    left: 25px;
+    border-radius: 60px;
+    color: var(--bs-primary);
+    background: var(--bs-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial .testimonial-item  .testimonial-quote-right {
+    position: absolute;
+    width: 60px; 
+    height: 60px;
+    bottom: -30px;
+    right: 25px;
+    margin-top: -5px;
+    border-radius: 60px;
+    color: var(--bs-primary);
+    background: var(--bs-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-stage-outer {
+    margin-top: 58px;
+    margin-right: -1px;
+}
+
+.testimonial .owl-nav .owl-prev {
+    position: absolute;
+    top: -58px;
+    left: 0;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    padding: 5px 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.testimonial .owl-nav .owl-prev:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+.testimonial .owl-nav .owl-next {
+    position: absolute;
+    top: -58px;
+    right: 0;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    padding: 5px 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.testimonial .owl-nav .owl-next:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+.testimonial-carousel .owl-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dots .owl-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 20px 10px 0 10px;
+    background: var(--bs-primary);
+    transition: 0.5s;
+}
+
+.testimonial-carousel .owl-dots .owl-dot.active {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: var(--bs-secondary);
+    transition: 0.5s;
+}
+
+.testimonial-carousel .owl-dots .owl-dot span {
+    position: relative;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.testimonial-carousel .owl-dots .owl-dot.active span::after {
+    background: var(--bs-primary);
+}
+
+.testimonial-carousel .owl-dots .owl-dot span::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--bs-white);
+    transition: 0.5s;
+}
+
+/*** Testimonial End ***/
+
+/*** Footer Start ***/
+.footer {
+    background: var(--bs-secondary);
+}
+
+.footer .footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-item a {
+    line-height: 35px;
+    color: var(--bs-body);
+    transition: 0.5s;
+}
+
+.footer .footer-item p {
+    line-height: 35px;
+}
+
+.footer .footer-item a:hover {
+    color: var(--bs-primary);
+}
+
+.footer .footer-item .footer-btn a,
+.footer .footer-item .footer-btn a i {
+    transition: 0.5s;
+}
+
+.footer .footer-item .footer-btn a:hover {
+    background: var(--bs-white);
+}
+
+.footer .footer-item .footer-btn a:hover i {
+    color: var(--bs-primary);
+}
+/*** Footer End ***/
+
+/*** copyright Start ***/
+.copyright {
+    background: var(--bs-dark);
+}
+/*** copyright end ***/
+
+/* --- CHEVRONS CARROUSEL HEADER ORANGE --- */
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  background: var(--primary) !important;
+  border-radius: 50% !important;
+  width: 48px;
+  height: 48px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-next:hover {
+  background: var(--accent) !important;
+}
+.owl-carousel .owl-nav .owl-prev span,
+.owl-carousel .owl-nav .owl-next span,
+.owl-carousel .owl-nav .owl-prev i,
+.owl-carousel .owl-nav .owl-next i {
+  color: #fff !important;
+  font-size: 2rem;
+  line-height: 1;
+}
+/* --- FIN CHEVRONS CARROUSEL HEADER ORANGE --- */
+
+/* --- FLECHE BLANCHE BACK TO TOP --- */
+.back-to-top i, .back-to-top span {
+  color: #fff !important;
+}
+/* --- FIN FLECHE BLANCHE --- */
+
+/* --- SUPPRESSION TOTALE DU SOULIGNEMENT NAVBAR --- */
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+  border-bottom: none !important;
+}
+/* --- FIN SUPPRESSION TOTALE DU SOULIGNEMENT NAVBAR --- */
+
+/* --- SOULIGNEMENT ORANGE NAVBAR (BOX-SHADOW) --- */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+  box-shadow: 0 2px 0 0 var(--accent) !important;
+  border-bottom: none !important;
+}
+/* --- FIN SOULIGNEMENT ORANGE NAVBAR --- */
+
+/* --- SUPPRESSION LIGNE BLEUE NAVBAR --- */
+.navbar-light .navbar-nav .nav-link::before,
+.navbar-light .navbar-nav .nav-link::after {
+  display: initial !important;
+  background: initial !important;
+  width: initial !important;
+  height: initial !important;
+  content: initial !important;
+}
+/* --- FIN SUPPRESSION LIGNE BLEUE NAVBAR --- */
+
+/* --- CORRECTION VISIBILITÉ ICÔNES --- */
+.fas, .fab, .fa, .bi {
+  color: inherit !important;
+}
+/* --- FIN CORRECTION VISIBILITÉ ICÔNES --- */
+
+/* --- ICÔNES BLANCHES VISIBLES DANS LES BOUTONS RONDS --- */
+.footer .btn-primary i,
+.footer .btn-primary .fab,
+.footer .btn-primary .fas,
+.footer .btn-primary .fa,
+.footer .btn-primary .bi,
+.btn-primary.btn-sm-square i,
+.btn-primary.btn-sm-square .fab,
+.btn-primary.btn-sm-square .fas,
+.btn-primary.btn-sm-square .fa,
+.btn-primary.btn-sm-square .bi,
+.back-to-top i {
+  color: #fff !important;
+  font-size: 1.3em !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+  opacity: 1 !important;
+  display: inline-block !important;
+}
+/* --- FIN ICÔNES BLANCHES VISIBLES --- */
+
+/* --- ÉTOILES BLEUES DANS LES TÉMOIGNAGES --- */
+.testimonial .fa-star {
+  color: var(--primary) !important;
+}
+/* --- FIN ÉTOILES BLEUES --- */
+
+/* Cercle animé autour de la coupe (Qui sommes-nous) - effet visuel circulaire */
+.cercle-anneau-anim {
+  position: absolute;
+  left: 50%;
+  bottom: -32px;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.cercle-anneau-texte {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #1A3478;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: cercle-texte-rotation 6s linear infinite;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.cercle-anneau-texte span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  line-height: 130px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  white-space: pre;
+}
+.cercle-anneau-centre {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FF6600;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 6px solid #fff;
+  z-index: 3;
+}
+.cercle-anneau-centre i {
+  color: #fff;
+  font-size: 32px;
+}
+@keyframes cercle-texte-rotation {
+  100% { transform: rotate(360deg);}
+}
+/* Fin cercle animé coupe */
+
+/* Badge SVG circulaire animé autour de la coupe (Qui sommes-nous) */
+.cercle-svg-anim {
+  position: absolute;
+  left: 50%;
+  bottom: -32px;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 140px;
+  z-index: 2;
+}
+.cercle-svg-anim svg {
+  width: 140px;
+  height: 140px;
+  display: block;
+  animation: cercle-svg-rotation 8s linear infinite;
+}
+@keyframes cercle-svg-rotation {
+  100% { transform: rotate(360deg);}
+}
+.cercle-svg-anim text {
+  text-transform: uppercase;
+  font-family: 'Inter', Arial, sans-serif;
+}
+/* Fin badge SVG circulaire */
+
+/* Coupe blanche centrée sur le badge circulaire SVG */
+.svg-coupe-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 32px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
+}
+/* Fin coupe blanche centrée */
+
+/* Correction : texte orange dans .blog devient bleu principal */
+.blog .blog-item,
+.blog .blog-item p,
+.blog .blog-item .mb-4,
+.blog .blog-item .mb-0,
+.blog .blog-item .text-primary,
+.blog .blog-item .text-primary * {
+  color: var(--primary) !important;
+}
+/* Fin correction texte blog bleu */
+
+/* Forcer le texte bleu sur le paragraphe offre (financement) */
+.offer-section .tab-content .tab-pane.active .mb-4 {
+  color: var(--primary) !important;
+}
+/* Fin correction texte offre bleu */
+
+/* Correction : paragraphes noirs sauf navbar (spécificité accrue) */
+p {
+  color: #181818 !important;
+}
+.navbar p, .navbar .nav-link p, .navbar-nav p, .navbar * p {
+  color: #fff !important;
+}
+/* Fin paragraphes noirs sauf navbar */
+
+/* Utilitaire : .text-black pour forcer le texte noir sur tout élément, y compris <a> et ses états, priorité maximale */
+.text-black, .text-black *, .text-black a, .text-black a:visited, .text-black a:active, .text-black a:focus, .text-black a:hover,
+.footer .footer-item a.text-black, .footer .footer-item a.text-black:visited, .footer .footer-item a.text-black:active, .footer .footer-item a.text-black:focus, .footer .footer-item a.text-black:hover,
+a.text-black, a.text-black:visited, a.text-black:active, a.text-black:focus, a.text-black:hover {
+  color: #181818 !important;
+}
+/* Fin utilitaire text-black priorité maximale */
+
+/* Ultra-spécificité : forcer le noir sur .text-black partout, même dans .blog, .offer-section, etc. */
+.blog .text-black, .blog .text-black *,
+.offer-section .text-black, .offer-section .text-black *,
+.text-black, .text-black *,
+.text-black a, .text-black a:visited, .text-black a:active, .text-black a:focus, .text-black a:hover {
+  color: #181818 !important;
+}
+/* Fin ultra-spécificité text-black */
+
+/* Ultra-spécificité finale : forcer le noir sur .text-black partout, même si d'autres !important sont présents */
+.blog [class*='text-black'], .blog [class*='text-black'] *,
+.offer-section [class*='text-black'], .offer-section [class*='text-black'] *,
+[class*='text-black'], [class*='text-black'] *,
+[class*='text-black'] a, [class*='text-black'] a:visited, [class*='text-black'] a:active, [class*='text-black'] a:focus, [class*='text-black'] a:hover {
+  color: #181818 !important;
+}
+/* Fin ultra-spécificité text-black finale */
+
+/* Ultra-forçage text-black SANS affecter les icônes */
+.blog .blog-item [class*="text-black"],
+.blog .blog-item [class*="text-black"]:not(i):not(.fas):not(.fab):not(.fa):not(.bi),
+.blog .blog-item [class*="text-black"] *:not(i):not(.fas):not(.fab):not(.fa):not(.bi),
+.offer-section [class*="text-black"],
+.offer-section [class*="text-black"]:not(i):not(.fas):not(.fab):not(.fa):not(.bi),
+.offer-section [class*="text-black"] *:not(i):not(.fas):not(.fab):not(.fa):not(.bi),
+[class*="text-black"], [class*="text-black"]:not(i):not(.fas):not(.fab):not(.fa):not(.bi), [class*="text-black"] *:not(i):not(.fas):not(.fab):not(.fa):not(.bi) {
+  color: #181818 !important;
+}
+/* Fin ultra-forçage text-black sans icônes */
+
+/* Correction : réactive le clic et le curseur sur les boutons FAQ */
+.faq-section .accordion-button, .faq-section .accordion-button:hover {
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  color: var(--primary) !important;
+}
+/* Fin correction FAQ interactivité */
+
+/* Spinner responsive et image stable */
+#spinner .spinner-border {
+  width: 6rem !important;
+  height: 6rem !important;
+  border-width: 8px !important;
+  min-width: 3rem;
+  min-height: 3rem;
+  max-width: 90vw;
+  max-height: 90vw;
+  box-sizing: border-box;
+}
+
+#spinner img[alt="Logo TradeWave"] {
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  will-change: opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: opacity 0.2s;
+  animation: logo-pulse 1.2s infinite;
+}
+
+@keyframes logo-pulse {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 0.7; }
+}
+
+@media (max-width: 600px) {
+  #spinner .spinner-border {
+    width: 4rem !important;
+    height: 4rem !important;
+    border-width: 6px !important;
+  }
+  #spinner img[alt="Logo TradeWave"] {
+    width: 60% !important;
+    height: 60% !important;
+  }
+}
+
+
